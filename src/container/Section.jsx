@@ -30,32 +30,22 @@ const Section = () => {
         opacity: 1
       })
       .to(".images-0", {
-        duration: 0.5,
-        ease: "expo.out",
         opacity: 1,
         y: -10
       })
       .to(".images-1", {
-        duration: 0.5,
-        ease: "expo.out",
         opacity: 1,
         y: -10
       })
       .to(".images-2", {
-        duration: 0.5,
-        ease: "expo.out",
         opacity: 1,
         y: -10
       })
       .to(".images-3", {
-        duration: 0.5,
-        ease: "expo.out",
         opacity: 1,
         y: -10
       })
       .to(".images-4", {
-        duration: 0.5,
-        ease: "expo.out",
         opacity: 1,
         y: -10
       });
@@ -89,8 +79,7 @@ const Section = () => {
       pin: true,
       scrub: 1,
       start: "bottom bottom",
-      end: "+=2000",
-      ease: "expo.out"
+      end: "+=2000"
     });
   }, []);
   return (
