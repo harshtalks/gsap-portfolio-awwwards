@@ -1,2 +1,2 @@
 # gsap-portfolio-awwwards
-Created with CodeSandbox
+my personal portfolio
