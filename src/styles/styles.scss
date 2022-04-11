@@ -209,12 +209,15 @@ body{
 			}
 			.projects{
 				position: absolute;
-				padding-bottom: 2rem;
+				padding-bottom: 1rem;
 				left: 0;
 				bottom: 0;
 				display: flex;
-				justify-content: space-between;
-				width: 100vw;
+				justify-content: space-evenly;
+				width: 100%;
+				padding-right: 2rem;
+				flex-wrap: wrap;
+				gap: 2rem;
 
 				@media (max-width: 500px){
 				  top: 0;
@@ -223,13 +226,21 @@ body{
 					align-items: center;
 				}
 
-				img{
-					width: 200px;
-					transition: 1s ease-in-out all;
-					opacity: 0;
+				p{
+					font-size: 1rem;
 					cursor: pointer;
-					
+					opacity: 0;
+					text-transform: uppercase;
+					transition: 0.5s all ease-in-out;
+
+					&:hover,:focus{
+						opacity: 1;
+						transform: translateY(-10);
+						text-decoration: underline;
+					}
 				}
+
+			
 			}
 		}
 

@@ -11,11 +11,25 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Section = () => {
   const arrayOfImages = [
-    { name: Moodlist, link: "http://moodlist.netlify.app/" },
-    { name: Covid, link: "http://harshpareek.me/covid-19.github.io/" },
-    { name: Boston, link: "https://boston-housing.netlify.app/" },
-    { name: Country, link: "https://where-in-the-world-rest.netlify.app/" },
-    { name: bank, link: "http://harshpareek.me/bankapp.github.io/" }
+    { name: "Moodlist Spotify", link: "http://moodlist.netlify.app/" },
+    { name: "Covid-19 App", link: "http://harshpareek.me/covid-19.github.io/" },
+    { name: "Boston Housing ML", link: "https://boston-housing.netlify.app/" },
+    {
+      name: "Country Info App",
+      link: "https://where-in-the-world-rest.netlify.app/"
+    },
+    {
+      name: "Bank App (Vanilla)",
+      link: "http://harshpareek.me/bankapp.github.io/"
+    },
+    {
+      name: "PacMan App",
+      link: "https://github.com/harshtalks/pacman-webcam"
+    },
+    {
+      name: "Boss Asked Me To",
+      link: "https://codesandbox.io/s/github/harshtalks/boss-asked-me-to"
+    }
   ];
   const tl2 = new gsap.timeline();
   const tl3 = new gsap.timeline();
@@ -29,25 +43,33 @@ const Section = () => {
       .to(".emailContent", {
         opacity: 1
       })
-      .to(".images-0", {
-        opacity: 1,
-        y: -10
+      .to(".project-0", {
+        opacity: 0.6,
+        y: -50
       })
-      .to(".images-1", {
-        opacity: 1,
-        y: -10
+      .to(".project-1", {
+        opacity: 0.6,
+        y: -50
       })
-      .to(".images-2", {
-        opacity: 1,
-        y: -10
+      .to(".project-2", {
+        opacity: 0.6,
+        y: -50
       })
-      .to(".images-3", {
-        opacity: 1,
-        y: -10
+      .to(".project-3", {
+        opacity: 0.6,
+        y: -50
       })
-      .to(".images-4", {
-        opacity: 1,
-        y: -10
+      .to(".project-4", {
+        opacity: 0.6,
+        y: -50
+      })
+      .to(".project-5", {
+        opacity: 0.6,
+        y: -50
+      })
+      .to(".project-6", {
+        opacity: 0.6,
+        y: -50
       });
 
     // gsap.utils.toArray(".images").forEach((img, i) => {
@@ -79,7 +101,7 @@ const Section = () => {
       pin: true,
       scrub: 1,
       start: "bottom bottom",
-      end: "+=2000"
+      end: "+=" + window.innerHeight * 4
     });
   }, []);
   return (
@@ -112,13 +134,13 @@ const Section = () => {
           </h1>
           <div className="projects">
             {arrayOfImages.map((el, i) => (
-              <img
-                className={`images-${i}`}
+              <p
+                className={`project-${i}`}
                 key={i}
-                src={el.name}
-                alt={el.name}
-                onClick={() => (window.location = el.link)}
-              />
+                onClick={() => window.open(el.link, "_blank")}
+              >
+                {el.name}
+              </p>
             ))}
           </div>
         </div>

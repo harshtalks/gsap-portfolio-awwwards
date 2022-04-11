@@ -40,12 +40,15 @@ const WriteUp = () => {
         <div className="socials">
           {socials.map((el) => {
             return (
-              <a key={el} href={el.link}>
+              <a key={el} href={el.link} target="_blank">
                 {el.name}
               </a>
             );
           })}
         </div>
+        <p style={{ marginTop: "20px" }}>
+          &copy; Harsh Pareek, Made with &hearts;
+        </p>
       </div>
     </div>
   );
