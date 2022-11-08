@@ -35,13 +35,7 @@ const MainHeader = () => {
           />
         </div>
         <div className="second">
-          <h1>
-            Hi besties, I'm Harsh and I love making websites and cool web apps.
-            This is something I've been doing since I was 15. I'm currently
-            pursuing Bachelor's Degree in Computer Science from Vellore
-            Institute of Technology. Scroll down to have a look at my projects
-            and the skills I know.
-          </h1>
+          <h1>lskl</h1>
         </div>
       </div>
     </div>

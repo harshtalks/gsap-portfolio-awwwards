@@ -3,6 +3,9 @@ import Loader from "./container/Loader";
 import MainHeader from "./container/MainSection";
 import Section from "./container/Section";
 import HelmetComponent from "./container/HelmetComponent";
+
+
+
 export default function App() {
   return (
     <>
